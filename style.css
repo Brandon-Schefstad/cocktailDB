@@ -1,0 +1,20 @@
+.cocktailImage {
+  max-height: 300px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.title {
+  text-align: center;
+}
+.drinkCard {
+  width: 100%;
+  padding-inline: 4rem;
+}
+* {
+}
+.buttons {
+  position: fixed;
+}
