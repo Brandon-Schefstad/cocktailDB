@@ -1,34 +1,3 @@
-// function MakePizza(topping1, topping2, size, delivery) {
-//   this.topping1 = topping1;
-//   this.topping2 = topping2;
-//   this.size = size;
-//   this.delivery = delivery;
-//   this.tasty = true;
-// }
-
-// let smallPizza = new MakePizza('cheese', 'jalapenos', 'small', true);
-// console.log(smallPizza);
-// ########################################
-// class MakePasta {
-//   constructor(pastaSize, pastaSauce, pricePoint) {
-//     this.size = pastaSize;
-//     this.sauce = pastaSauce;
-//     this.price = pricePoint;
-//   }
-//   eat() {
-//     alert('YUMMY');
-//   }
-// }
-// let faggiole = new MakePasta('medium', 'marinara', '$$$$');
-// console.log(faggiole);
-
-// CocktailDB:
-
-// const searchCocktailByName =
-//   'www.thecocktaildb.com/api/json/v1/1/search.php?s=';
-// const listAllCocktailsByFirstLetter =
-//   'www.thecocktaildb.com/api/json/v1/1/search.php?f=';
-
 let cocktailArray = [1, 2, 3, 4, 5, 6];
 document.querySelector('.prev').addEventListener('click', goPrevious);
 document.querySelector('.next').addEventListener('click', goNext);
@@ -97,7 +66,7 @@ async function goFetch() {
         img.src = cleanedData.strDrinkThumb;
 
         const title = document.createElement('h1');
-        title.innerText = cleanedData.strDrink + ` ||  With an index of ${x}`;
+        title.innerText = cleanedData.strDrink;
         title.setAttribute('class', 'title');
 
         anchor.append(drinkCard);
